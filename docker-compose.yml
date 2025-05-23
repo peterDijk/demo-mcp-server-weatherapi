@@ -1,0 +1,10 @@
+services:
+  demo-mcp-server:
+    container_name: demo-mcp-server
+    build:
+      context: ./
+    restart: always
+    ports:
+      - 3000:3002
+    environment:
+      - NODE_ENV=development

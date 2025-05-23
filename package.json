@@ -1,0 +1,27 @@
+{
+  "name": "demo-mcp-server-weatherapi",
+  "version": "1.0.0",
+  "description": "A demo server for the Model Context Protocol (MCP) using the WeatherAPI api.weather.gov.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-strip-types src/index.ts",
+    "dev": "concurrently \"npx @modelcontextprotocol/inspector\" \"npm start\""
+  },
+  "keywords": [],
+  "author": "Peter van Dijk",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.11.4",
+    "express": "^5.1.0",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.2",
+    "@types/node": "^22.15.19",
+    "concurrently": "^9.1.2",
+    "prettier": "^3.5.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
