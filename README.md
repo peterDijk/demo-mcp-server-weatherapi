@@ -13,7 +13,7 @@ This project showcases how to build an MCP server that wraps an external API (in
   - `get-forecast`: Retrieve weather forecasts for a specific location using latitude and longitude
   - `get-alerts`: Get active weather alerts for a specific U.S. state
 - **Multiple Transport Options**:
-  - HTTP with streaming responses
+  - Streamable HTTP with streaming responses (latest, preferred transport)
   - Server-Sent Events (SSE) transport (commented out by default)
 
 ## Prerequisites
@@ -44,6 +44,7 @@ npm run dev
 ```
 
 The server will be available at http://localhost:3002/mcp.
+When SSE is enabled in stead, that address to connect to is http://localhost:3002/sse
 
 ### Using Docker
 
@@ -54,6 +55,7 @@ docker-compose up --build
 ```
 
 The server will be available at http://localhost:3000/mcp.
+When SSE is enabled in stead, that address to connect to is http://localhost:3000/sse
 
 ## API Usage
 
